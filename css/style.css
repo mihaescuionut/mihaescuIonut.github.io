@@ -2,13 +2,14 @@
 *{
 
     box-sizing: border-box;
-    
+    list-style: none;
 }
 
 body{
 
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Georgia', 'sans-serif';
     background: #eff4fd;
+    background-image:url('/images/455.jpg');
 
 
 }
@@ -46,23 +47,25 @@ transition: all 0.3s ease-in-out;
 
 nav ul li{
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-   
+    color: #469A46;
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.5s ease;
 }
 
 nav ul li a:hover{
-    color: red;
+    color: #CAA800;
 }
 
 .second-nav{
-    background-image:url('/images/codeimage.png');
     background-position: center;
     background-size: cover;
 
@@ -79,11 +82,15 @@ nav ul li a:hover{
 }
 
 span{
-    color: red;
+    color: #CAA800;
+}
+
+.second-nav h1{
+    color: #A3E7BA;
 }
 
 .second-nav p{
-    color: #5F6A6A;
+    color: #A3E7BA;
     line-height: 22px; 
     text-align: center;
     font-weight: bold;
@@ -91,7 +98,7 @@ span{
 }
 
 .second-nav a{
-    background: #5F6A6A;
+    background: #469A46;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -102,7 +109,7 @@ span{
 }
 
 .second-nav a:hover{
-    color: red;
+    color: #CAA800;
 }
 
 .main-content{
@@ -111,7 +118,8 @@ span{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    
 }
 
 
@@ -119,22 +127,23 @@ span{
 .biography{
     text-align: center;
     padding: 20px;
-    border-bottom-style: double;
-    border-bottom-color: grey;
+    border-style: double;
+    border-color: grey;
     border-radius: 15px;
-    background-color: #cecece;
+    background-color: #DDE2A1;
+    
 
 }
 
 
 .contact-me{
 
-    background: #5F6A6A;
+    background: #D2D887;
     border-radius: 15px;
     width: 100%;
     text-align: center;
-    border-bottom-style: double;
-    border-bottom-color: grey;
+    border-style: double;
+    border-color: grey;
     padding: 20px;
 
 }
@@ -149,17 +158,45 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #cecece;
+    background-color: #C6CF5D;
+    border-style: double;
+    border-color: grey;
+    height: 265px;
     width: 100%;
-    padding: 20px;
     border-radius: 15px;
+    
 }
 
 .prof{
-    height: 18px;
-    background-color: #eee;
-    margin-bottom: 30px;
+    display: block;
+    background: #DDE2A1;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 400px;
+}
+
+.prof:hover{
+    box-shadow: 0 14px 28px rgba(2, 107, 2, 0.25), 0 10px 10px rgba(2, 107, 2, 0.22);
+}
+
+
+.personal-skills{
+    background-color: #BBC643;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: double;
+    border-color: grey;
+    width: 100%;
+    border-radius: 15px;
+    
+    
 }
 
 .prof::before{
@@ -191,14 +228,32 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 265px;
 }
 
 .per{
-    height: 18px;
-    background-color: #eee;
-    margin-bottom: 30px;
+    display: block;
+    background: #DDE2A1;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 400px;
 }
+
+.per:hover{
+    box-shadow: 0 14px 28px rgba(2, 107, 2, 0.25), 0 10px 10px rgba(2, 107, 2, 0.22);
+}
+
+.per span{
+    height: 20px;
+    float: left;
+}
+
+
 
 .per::before{
     content: "";
@@ -232,8 +287,10 @@ span{
     align-items: center;
     text-align: center;
     width: 100%;
-    background: black;
     color: white;
+    position: relative;
+    bottom: 0;
+    margin-top: 100px;
 }
 
 
@@ -295,7 +352,6 @@ span{
     }
 
     .profesional-skills{
-        background: #5F6A6A;
         border-radius: 15px;
         padding: 20px;
         
@@ -304,7 +360,6 @@ span{
     .personal-skills{
         padding: 20px;
         border-radius: 15px;
-        background-color: #cecece;
         
     }
 
